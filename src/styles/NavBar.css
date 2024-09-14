@@ -1,0 +1,130 @@
+.topNavBar ,.sideNavBar{
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.topNavBar{
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    
+    position: fixed;
+    background-color: #f5f6fa;
+    z-index: 1;
+    top:0px;
+    left:0px;
+    right:0px;
+    
+    
+
+}
+.topNavBar>p:first-child , .sideNavBar>p:first-child{
+    padding-left: 30px;
+    font-size: 2rem;
+    pointer-events: none;
+}
+
+
+.topNavBar>p:nth-child(2){
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.topNavBar>p:nth-child(2) button{
+    border:none;
+    padding: 4px 18px;
+    height: 34px;
+    border-radius: 30px;
+    box-shadow: 3px 2px 9px #cab3b3;
+    font-size: 0.9rem;
+
+    background-color: white;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+
+.topNavBar>:nth-child(2) button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.sideNavBar>nav{
+    z-index: 10;
+    position: absolute;
+    left: 0px;
+    width: 240px;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+
+.sideNavBar>nav>p:nth-child(1){
+    
+    padding: 10px 30px;
+    font-size: 2rem;
+    pointer-events: none;
+ 
+}
+
+.sideNavBar button{
+margin: 20px ;
+background-color: black;
+padding: 8px 14px;
+box-shadow: none;
+border: none;
+color: white;
+font-size: 0.9rem;
+text-align: start;
+width: 80%;
+border-bottom: 2px solid black;
+}
+.sideNavBar button:hover{
+    border-bottom-color:  rgb(237, 204, 204);
+   
+    transition: 0.5s ease-in;
+    cursor: pointer ;
+  
+
+}
+.sideNavBar{
+    display: grid;
+    grid-template-columns: 90% 10%; 
+    position: relative;
+    position: fixed;
+    background-color: #f5f6fa;
+    z-index: 1;
+    top:0px;
+    left:0px;
+    right:0px;
+   
+}
+.sideNavBar>p:nth-child(2)
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.sideNavBar>p:nth-child(2)>span{
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 900px) {
+    .topNavBar{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .sideNavBar{
+        display: none;
+    }
+}
+
