@@ -9,6 +9,7 @@ interface Props{
 }
 export const SideBar:FC<Props> = (props) => {
     useEffect(()=>{
+       
         props.active()  
     },[])
     const [visible, setVisible] = useState(false)

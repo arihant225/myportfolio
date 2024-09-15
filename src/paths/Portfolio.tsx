@@ -17,10 +17,13 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 
+
+
 const srcs = [
     img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12
 ]
 export const Portfolio = () => {
+
 
     const [techs, setTechs] = useState(srcs);
     useEffect(() => {
