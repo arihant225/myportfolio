@@ -15,41 +15,51 @@ body {
   font-style: normal;
   font-size: 14px;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-body{
+body {
   background-color: #f5f6fa;
   zoom: 90%;
 }
 
-.backdrop{
+.backdrop {
   position: fixed;
-  top:0px;
+  top: 0px;
   bottom: 0px;
   left: 0px;
   right: 0px;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 9;
 }
 
-.render{
+.render {
   margin-top: 140px;
 
-  
+
 }
-.main-container{
+
+.main-container {
   padding: 20px;
 }
 
 @media screen and (max-width:500px) {
-  body{
-    scale:1;
+  body {
+    scale: 1;
   }
-  .tech-img{
+
+  .tech-img {
     scale: 0.5;
   }
-  
+
+  .summary>div>p:nth-child(1) {
+
+    display: grid;
+    grid-template-columns: 100%;
+
+  }
+
 }

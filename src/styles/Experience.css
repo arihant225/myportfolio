@@ -1,6 +1,6 @@
 ul {
    border-left: 3px solid rgb(22, 21, 21);
-   padding: 5px 20px 5px 0px;
+   padding: 5px 0px 5px 20px;
 }
 
 .skills-table {
@@ -99,3 +99,36 @@ table tr>td {
    font-weight: 500;
    font-style: normal;
 }
+@media screen and (max-width:500px) {
+   body {
+     scale: 1;
+   }
+ 
+   .tech-img {
+     scale: 0.5;
+   }
+ 
+   .summary>div>p:nth-child(1) {
+ 
+     display: grid;
+     grid-template-columns: 100%;
+     font-size: 14px;
+     grid-row-gap: 10px;
+   }
+   .summary>div>p:nth-child(1)>span:nth-child(2) {
+      text-align: left;
+    
+   }
+   
+ 
+.exp-items>p:nth-child(1) {
+font-size: 14px;
+   grid-template-columns: 100%;
+   grid-row-gap: 10px;
+}
+
+.exp-items>p:nth-child(1)>span:nth-child(2) {
+   text-align: left;
+}
+
+ }
