@@ -11,15 +11,11 @@ interface Props {
 export const CommonView: FC<Props> = (props) => {
     return (
         <>
-            <NavBar  />
-            <div className="render">
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/Portfolio" element={<Home />} />
-                <Route path="/Experience" element={<Experience />} />
-                <Route path="/Articles" element={<Articles />} />
-            </Routes>
-            </div>
+        <NavBar/>
+        <div style={{height:'100px'}}></div>
+        <Home />
+        <Experience/>
+            
         </>
     )
 }

@@ -1,27 +1,24 @@
 .topNavBar ,.sideNavBar{
-    font-family: "SUSE", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+
 }
 .topNavBar{
     display: grid;
     grid-template-columns: 30% 70%;
 
-    
     position: fixed;
     background-color: #f5f6fa;
-    z-index: 1;
+    z-index: 100;
     top:0px;
     left:0px;
     right:0px;
+    border-bottom: 3px solid white;
     
     
 
 }
 .topNavBar>p:first-child , .sideNavBar>p:first-child{
     padding-left: 30px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     pointer-events: none;
 }
 

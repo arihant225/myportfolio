@@ -20,7 +20,7 @@ export const NavBar:FC<{}>=(props)=>{
     const active=()=>{
        setTimeout(() => {
         let path  = window.location.pathname.split("/")
-        setTitle( dev+" "+path[path.length-1]||'Portfolio')
+        setTitle( dev+" "+(path[path.length-1]?path[path.length-1]:'Portfolio'))
        }, 100);
   
     }
@@ -30,7 +30,6 @@ export const NavBar:FC<{}>=(props)=>{
         {name:"Portfolio ",path:"/Portfolio"},
         {name:"Articles ",path:"/Articles"},
         {name:"Projects ",path:"/Projects"},
-        {name:"Experience/About",path:"/Experience"},
         {name:"Catch Me up",func:()=>{}},
 
     ]
