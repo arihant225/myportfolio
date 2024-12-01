@@ -47,7 +47,7 @@ export const Portfolio = () => {
             Ans: 4
         },
         {
-            Ques: 'Stack Currently I am working in :',
+            Ques: 'Majorly I am working in',
             Ans: 'dotnet & Angular'
         }
     ]
@@ -82,10 +82,10 @@ export const Portfolio = () => {
 
 
                     if (style[index].top) {
-                        horizontals[index].style.top = index < 2 ? '-10px' : '120px'
+                        horizontals[index].style.top = index < 2 ? '-10px' : '140px'
                     }
                     if (style[index].bottom) {
-                        horizontals[index].style.bottom = index < 2 ? '-10px' : '120px'
+                        horizontals[index].style.bottom = index < 2 ? '-10px' : '140px'
                     }
                     horizontals[index].style.width = '100%'
                     horizontals[index].style.left = '0px'
@@ -103,7 +103,7 @@ export const Portfolio = () => {
         const tech=document.getElementById("tech-container");
         if(tech)
         _techImgs.forEach((ele, index) => {
-            let radius = tech.clientWidth/2  -50;
+            let radius = tech.clientWidth/2  -30;
 
             let deg = Math.PI * 2 * (index + 1) / _techImgs.length;
             let img = (ele as HTMLImageElement)

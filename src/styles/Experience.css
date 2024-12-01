@@ -1,6 +1,6 @@
 ul {
    border-left: 3px solid rgb(22, 21, 21);
-   padding: 5px 20px 5px 20px;
+   padding: 5px 20px 5px 0px;
 }
 
 .skills-table {
@@ -57,8 +57,8 @@ ul {
 
 .milestones {
    box-shadow: 1px 1px 7px 2px rgb(198, 159, 159);
-   padding: 20px;
-   margin: 30px;
+   padding: 20px  10px;
+   margin: 30px 0px;
 
 
 }

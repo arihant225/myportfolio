@@ -48,5 +48,8 @@ body{
   body{
     scale:1;
   }
+  .tech-img{
+    scale: 0.5;
+  }
   
 }
