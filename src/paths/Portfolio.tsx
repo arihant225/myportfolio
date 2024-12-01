@@ -47,8 +47,9 @@ export const Portfolio = () => {
             Ans: 4
         },
         {
-            Ques: 'Majorly I am working in',
-            Ans: 'dotnet & Angular'
+            Ques: 
+            "Majorly I've worked in",
+            Ans: '.NET & Angular'
         }
     ]
     const[size,setSize]=useState(window.innerWidth)
@@ -77,7 +78,7 @@ export const Portfolio = () => {
                     if (main)
                         verticals[index].style.width = (main.clientHeight) + 'px'
                     if (main)
-                        (ele as HTMLDivElement).style.maxWidth = '40%'
+                        (ele as HTMLDivElement).style.maxWidth = '45%'
                     verticals[index].style.height = '0.25px'
 
 
