@@ -73,7 +73,20 @@ export const myExperiences:IExp[]=[
         present:true,
         from:new Date("09/01/2024"),
         experienceSummary:[
-
+            {
+                from:new Date("09/01/2024"),
+                title:"Specialist Programmer - L1",
+                description:[
+                    "Engineered and deployed a centralized authentication service supporting unified, token-based access across multiple client platforms, streamlining security protocols through a single endpoint",
+                    "Refactored Angular components to improve code clarity, modularity, and performance, resulting in a more maintainable and optimized frontend architecture",
+                    "Optimized SQL stored procedures to enhance system responsiveness, delivering faster query execution and improved backend efficiency",
+                    "Facilitated cross-regional collaboration by maintaining seamless communication between offshore and onshore teams, resolving blockers and aligning project goals",
+                    "Architected a JSON-driven framework for dynamic field mapping and validation, enabling scalable and configurable application behavior based on JSON definitions",
+                    "Developed reusable, generic Angular components to standardize UI behavior, minimize bugs, and boost development efficiency",
+                    "Integrated microservices using RabbitMQ to establish asynchronous communication between applications, driving workflow automation and reducing operational overhead"
+                  ],
+                tags:["C#","Angular",".NET","SQL Server","Entity Framework"]
+            }
         ]
     }
 ]

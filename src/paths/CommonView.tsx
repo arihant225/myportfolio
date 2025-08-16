@@ -14,7 +14,7 @@ export const CommonView: FC<Props> = (props) => {
         <NavBar/>
         <div style={{height:'100px'}}></div>
         <Home />
-        <Experience/>
+       
             
         </>
     )

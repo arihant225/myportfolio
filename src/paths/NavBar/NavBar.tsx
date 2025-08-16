@@ -29,7 +29,6 @@ export const NavBar:FC<{}>=(props)=>{
     const links:NavBarLinks[]=[
         {name:"Portfolio ",path:"/Portfolio"},
         {name:"Articles ",path:"/Articles"},
-        {name:"Projects ",path:"/Projects"},
         {name:"Catch Me up",func:()=>{}},
 
     ]

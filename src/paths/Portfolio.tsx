@@ -15,6 +15,7 @@ import img12 from '../assets/techstack (12).svg'
 import dev from '../assets/dev.png'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Experience } from './Experience'
 
 
 
@@ -165,6 +166,7 @@ export const Portfolio = () => {
                     )
                 }
             </div>
+            <Experience/>
         </>
     )
 }
