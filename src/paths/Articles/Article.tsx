@@ -6,7 +6,7 @@ import { articles, IArticle } from '../../articles';
 export const Article = () => {
 const refs=useRef<(HTMLParagraphElement|null)[]>([])
 
-const [article,setArticle]=useState<IArticle>(articles[0])
+const [article,setArticle]=useState<IArticle>(articles[+document.URL.split('/')[document.URL.split('/').length-1]])
            
       
       

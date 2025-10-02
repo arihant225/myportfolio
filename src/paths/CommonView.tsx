@@ -3,7 +3,7 @@ import { NavBar } from "./NavBar/NavBar"
 import { Route, Routes } from "react-router-dom"
 import { Home } from "./Home"
 import { Experience } from "./Experience"
-import { Articles } from "./Articles"
+
 
 interface Props {
 }

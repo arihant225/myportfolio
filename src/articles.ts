@@ -81,7 +81,50 @@ export const articles:IArticle[]=[{
         ]
       }
     ]
-}]
+},
+{
+  title: "Implementing .NET Test Cases with Dependency Injection and Mocking",
+  intro: "When writing test cases in .NET, it’s common to face challenges around setting up the right environment and isolating the components you truly want to test. Instead of spinning up everything from scratch, dependency injection and mocking can give you a clean, maintainable, and flexible way to validate your application logic. Here’s how I approached it using a builder pipeline, dependency injection, and mocked services.",
+  tips: [
+    {
+      title: "Start with a Builder Object for Services",
+      description: "Instead of cluttering your tests with multiple service registrations, use a builder pattern to configure all required services. This centralizes your setup and makes it easier to maintain.",
+      points: [
+        {
+          point_title: "Why Builder?",
+          intuition: "A builder helps keep test setup consistent across multiple test cases.",
+          reasoning: "It allows you to add all kinds of services in one place and reuse the configuration.",
+          example: "For example, I created a builder that adds all required services, then reused it across several test cases without repeating code."
+        }
+      ]
+    },
+    {
+      title: "Mock Only What You Need",
+      description: "Mocking every service can get messy. Instead, mock only the units that are external or not under test—such as repositories or external APIs.",
+      points: [
+        {
+          point_title: "Focus on Unit of Work and Repository",
+          intuition: "These are often the boundaries of your system and don’t need to run with real implementations during unit tests.",
+          reasoning: "By mocking them, you isolate business logic and avoid database calls.",
+          example: "In my case, I mocked only the Unit of Work and Repository while letting the rest of the pipeline run with actual services."
+        }
+      ]
+    },
+    {
+      title: "Leverage Dependency Injection",
+      description: "Rather than manually wiring up dependencies, let the .NET DI container handle it for you. This ensures that services are consistent between your real application and your test environment.",
+      points: [
+        {
+          point_title: "Consistency Between App and Tests",
+          intuition: "Tests should mirror how the app runs in production as closely as possible.",
+          reasoning: "Using DI ensures the same lifecycle, scoping, and object graphs as your actual app.",
+          example: "I used the DI container to resolve services, only swapping out the mocked repositories where needed."
+        }
+      ]
+    }
+  ]
+}
+]
   
 export interface IArticle{
     title:string,

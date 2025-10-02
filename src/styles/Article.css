@@ -10,6 +10,33 @@
     margin-bottom: 10px;
   }
   
+  .list-of-articles{
+    border: 2px solid;
+    color: #0b0a07;
+    padding: 10px;
+    margin: 30px;
+    display: inline-block;
+    width: 40%;
+    min-height: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    box-shadow: 3px 3px #68c08f;
+    cursor: pointer;
+    scale: 0.8;
+  }
+  @media screen and (max-width: 700px) {
+     
+  .list-of-articles{
+  width: calc(100% - 60px);
+  }
+
+}
+  .list-of-articles:hover{
+    scale:0.9;
+    transition: 0.4s;
+  }
   .article_template h2 {
     font-size: 20px;
     margin-top: 20px;
